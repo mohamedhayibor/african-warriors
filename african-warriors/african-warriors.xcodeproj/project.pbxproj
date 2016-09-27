@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD2BBDE51D9AFE72002055A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDE41D9AFE72002055A4 /* AppDelegate.swift */; };
+		CD2BBDE71D9AFE72002055A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDE61D9AFE72002055A4 /* ViewController.swift */; };
+		CD2BBDEA1D9AFE72002055A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2BBDE81D9AFE72002055A4 /* Main.storyboard */; };
+		CD2BBDEC1D9AFE72002055A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2BBDEB1D9AFE72002055A4 /* Assets.xcassets */; };
+		CD2BBDEF1D9AFE72002055A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2BBDED1D9AFE72002055A4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD2BBDE11D9AFE72002055A4 /* african-warriors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "african-warriors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2BBDE41D9AFE72002055A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD2BBDE61D9AFE72002055A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD2BBDE91D9AFE72002055A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD2BBDEB1D9AFE72002055A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD2BBDEE1D9AFE72002055A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD2BBDF01D9AFE72002055A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD2BBDDE1D9AFE72002055A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD2BBDD81D9AFE71002055A4 = {
+			isa = PBXGroup;
+			children = (
+				CD2BBDE31D9AFE72002055A4 /* african-warriors */,
+				CD2BBDE21D9AFE72002055A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD2BBDE21D9AFE72002055A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2BBDE11D9AFE72002055A4 /* african-warriors.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD2BBDE31D9AFE72002055A4 /* african-warriors */ = {
+			isa = PBXGroup;
+			children = (
+				CD2BBDE41D9AFE72002055A4 /* AppDelegate.swift */,
+				CD2BBDE61D9AFE72002055A4 /* ViewController.swift */,
+				CD2BBDE81D9AFE72002055A4 /* Main.storyboard */,
+				CD2BBDEB1D9AFE72002055A4 /* Assets.xcassets */,
+				CD2BBDED1D9AFE72002055A4 /* LaunchScreen.storyboard */,
+				CD2BBDF01D9AFE72002055A4 /* Info.plist */,
+			);
+			path = "african-warriors";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD2BBDE01D9AFE72002055A4 /* african-warriors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2BBDF31D9AFE72002055A4 /* Build configuration list for PBXNativeTarget "african-warriors" */;
+			buildPhases = (
+				CD2BBDDD1D9AFE72002055A4 /* Sources */,
+				CD2BBDDE1D9AFE72002055A4 /* Frameworks */,
+				CD2BBDDF1D9AFE72002055A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "african-warriors";
+			productName = "african-warriors";
+			productReference = CD2BBDE11D9AFE72002055A4 /* african-warriors.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD2BBDD91D9AFE72002055A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Mohamed Hayibor";
+				TargetAttributes = {
+					CD2BBDE01D9AFE72002055A4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CD2BBDDC1D9AFE72002055A4 /* Build configuration list for PBXProject "african-warriors" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD2BBDD81D9AFE71002055A4;
+			productRefGroup = CD2BBDE21D9AFE72002055A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD2BBDE01D9AFE72002055A4 /* african-warriors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD2BBDDF1D9AFE72002055A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2BBDEF1D9AFE72002055A4 /* LaunchScreen.storyboard in Resources */,
+				CD2BBDEC1D9AFE72002055A4 /* Assets.xcassets in Resources */,
+				CD2BBDEA1D9AFE72002055A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD2BBDDD1D9AFE72002055A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2BBDE71D9AFE72002055A4 /* ViewController.swift in Sources */,
+				CD2BBDE51D9AFE72002055A4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD2BBDE81D9AFE72002055A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2BBDE91D9AFE72002055A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD2BBDED1D9AFE72002055A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2BBDEE1D9AFE72002055A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD2BBDF11D9AFE72002055A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD2BBDF21D9AFE72002055A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD2BBDF41D9AFE72002055A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "african-warriors/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OpenSource.african-warriors";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CD2BBDF51D9AFE72002055A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "african-warriors/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OpenSource.african-warriors";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD2BBDDC1D9AFE72002055A4 /* Build configuration list for PBXProject "african-warriors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2BBDF11D9AFE72002055A4 /* Debug */,
+				CD2BBDF21D9AFE72002055A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2BBDF31D9AFE72002055A4 /* Build configuration list for PBXNativeTarget "african-warriors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2BBDF41D9AFE72002055A4 /* Debug */,
+				CD2BBDF51D9AFE72002055A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD2BBDD91D9AFE72002055A4 /* Project object */;
+}
