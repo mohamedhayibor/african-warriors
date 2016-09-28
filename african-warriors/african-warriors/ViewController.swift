@@ -25,6 +25,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // dequeues the cell and sets it up
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WarriorCell", for: indexPath) as? WarriorCell {
+            
+            let warrior = Warrior(name: "Warrior", warriorId: indexPath.row)
+            cell.configureCell(warrior: warrior)
+            
             return cell
         } else {
             return UICollectionViewCell()
