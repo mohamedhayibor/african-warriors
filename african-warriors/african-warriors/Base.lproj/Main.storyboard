@@ -49,7 +49,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BR2-L5-VGz">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WarriorCell" id="BR2-L5-VGz" customClass="WarriorCell" customModule="african_warriors" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="82"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -77,6 +77,10 @@
                                             <constraint firstAttribute="trailing" secondItem="HMP-V6-IiS" secondAttribute="trailing" id="xqT-AP-YRo"/>
                                             <constraint firstItem="HMP-V6-IiS" firstAttribute="top" secondItem="BR2-L5-VGz" secondAttribute="top" id="y23-WV-KCS"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="hyf-rY-xww" id="ED1-yz-miR"/>
+                                            <outlet property="thumbImg" destination="HMP-V6-IiS" id="YW2-Do-iin"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

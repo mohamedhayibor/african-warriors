@@ -14,6 +14,7 @@
 		CD2BBDEF1D9AFE72002055A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2BBDED1D9AFE72002055A4 /* LaunchScreen.storyboard */; };
 		CD2BBDF81D9B44FA002055A4 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDF71D9B44FA002055A4 /* csv.swift */; };
 		CD2BBDFB1D9B4686002055A4 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDFA1D9B4686002055A4 /* Warrior.swift */; };
+		CD2BBDFE1D9B4BBB002055A4 /* WarriorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDFD1D9B4BBB002055A4 /* WarriorCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CD2BBDF01D9AFE72002055A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2BBDF71D9B44FA002055A4 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		CD2BBDFA1D9B4686002055A4 /* Warrior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		CD2BBDFD1D9B4BBB002055A4 /* WarriorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarriorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		CD2BBDE31D9AFE72002055A4 /* african-warriors */ = {
 			isa = PBXGroup;
 			children = (
+				CD2BBDFC1D9B4B35002055A4 /* View */,
 				CD2BBDF91D9B4649002055A4 /* Model */,
 				CD2BBDF61D9B44AC002055A4 /* util */,
 				CD2BBDE41D9AFE72002055A4 /* AppDelegate.swift */,
@@ -84,6 +87,14 @@
 				CD2BBDFA1D9B4686002055A4 /* Warrior.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		CD2BBDFC1D9B4B35002055A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD2BBDFD1D9B4BBB002055A4 /* WarriorCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2BBDFE1D9B4BBB002055A4 /* WarriorCell.swift in Sources */,
 				CD2BBDF81D9B44FA002055A4 /* csv.swift in Sources */,
 				CD2BBDE71D9AFE72002055A4 /* ViewController.swift in Sources */,
 				CD2BBDFB1D9B4686002055A4 /* Warrior.swift in Sources */,
