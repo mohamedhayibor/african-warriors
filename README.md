@@ -1,6 +1,6 @@
 # african-warriors
 
-By African warriors, we refer to the kings/queens who fought for a considerable cause or mission.
+By African warriors, we refer to the kings/queens/leader who fought for a considerable cause or mission.
 
 Who is this app for: history tinkerers, children, anybody getting ready for a test (exam) on the topic.
 
@@ -27,6 +27,8 @@ id, name, born, death, kingdom, bio
 and a folder containing the profile of the warrior. Name the image by the corresponding id.
 
 > example if id = 10, name of the img = "10.png"
+
+We are harvesting data by hand because there is poor or almost no data for some of the warriors. This process is super messy but I plan on hosting a REST JSON Api for anyone who might need this data in the future.
 
 ## Implementation details
 
