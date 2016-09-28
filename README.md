@@ -2,7 +2,7 @@
 
 By African warriors we refer to the kings/queens who fought for a considerable cause, mission and sometimes achieved the unthinkable.
 
-Who is this app: for history tinkerers, children, and getting ready for a test (exam) on the topic.
+Who is this app for: history tinkerers, children, and getting ready for a test (exam) on the topic.
 
 ## I Do need help (you programmer or not)
 
