@@ -103,6 +103,9 @@
                             <constraint firstAttribute="trailing" secondItem="aGf-f4-bWq" secondAttribute="trailing" constant="20" id="yCC-eH-cHV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="aGf-f4-bWq" id="7F3-p7-zFD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
