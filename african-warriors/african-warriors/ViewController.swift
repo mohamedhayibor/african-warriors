@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collection: UICollectionView!
+    
+    var warrior = [Warrior]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,25 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // assigning the delegate and datasource to self
         collection.dataSource = self
         collection.delegate = self
+        
+        parseWarriorsCSV()
     }
+    
+    func parseWarriorsCSV() {
+        let path = Bundle.main.path(forResource: "warriors", ofType: "csv")!
+        
+        do {
+            let csv = try CSV(contentsOfURL: path)
+            let rows = csv.rows
+            
+            // for debugging purposes
+            print( rows )
+            
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+    }
+    
     
     // dequeues the cell and sets it up
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -15,6 +15,7 @@
 		CD2BBDF81D9B44FA002055A4 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDF71D9B44FA002055A4 /* csv.swift */; };
 		CD2BBDFB1D9B4686002055A4 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDFA1D9B4686002055A4 /* Warrior.swift */; };
 		CD2BBDFE1D9B4BBB002055A4 /* WarriorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDFD1D9B4BBB002055A4 /* WarriorCell.swift */; };
+		CD49330A1D9C4D6D00E2F45A /* warriors.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD4933091D9C4D6D00E2F45A /* warriors.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CD2BBDF71D9B44FA002055A4 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		CD2BBDFA1D9B4686002055A4 /* Warrior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
 		CD2BBDFD1D9B4BBB002055A4 /* WarriorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarriorCell.swift; sourceTree = "<group>"; };
+		CD4933091D9C4D6D00E2F45A /* warriors.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warriors.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		CD2BBDE31D9AFE72002055A4 /* african-warriors */ = {
 			isa = PBXGroup;
 			children = (
+				CD4933081D9C4AF600E2F45A /* Resources */,
 				CD2BBDFC1D9B4B35002055A4 /* View */,
 				CD2BBDF91D9B4649002055A4 /* Model */,
 				CD2BBDF61D9B44AC002055A4 /* util */,
@@ -95,6 +98,14 @@
 				CD2BBDFD1D9B4BBB002055A4 /* WarriorCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		CD4933081D9C4AF600E2F45A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD4933091D9C4D6D00E2F45A /* warriors.csv */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 				CD2BBDEF1D9AFE72002055A4 /* LaunchScreen.storyboard in Resources */,
 				CD2BBDEC1D9AFE72002055A4 /* Assets.xcassets in Resources */,
 				CD2BBDEA1D9AFE72002055A4 /* Main.storyboard in Resources */,
+				CD49330A1D9C4D6D00E2F45A /* warriors.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +345,7 @@
 				CD2BBDF51D9AFE72002055A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
