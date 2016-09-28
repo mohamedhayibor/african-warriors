@@ -14,6 +14,15 @@ class WarriorCell: UICollectionViewCell {
     
     var warrior: Warrior!
     
+    /* snippet of code for rounded cell corners
+    required init?(coder: aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        layer.cornerRadius = 5.0
+    }
+    */
+ 
+    
     func configureCell(warrior: Warrior) {
         self.warrior = warrior
         nameLbl.text = self.warrior.name.capitalized
