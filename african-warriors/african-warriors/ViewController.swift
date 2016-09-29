@@ -12,7 +12,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collection: UICollectionView!
     
-    var warrior = [Warrior]()
+    var warriors = [Warrior]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,22 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let csv = try CSV(contentsOfURL: path)
             let rows = csv.rows
             
+            for row in rows {
+                let warriorId = Int(row["id"]!)!
+                let warriorName = row["name"]!
+                
+                /*  We'll use these pretty soon > if I extend the warrior class first
+                 
+                let warriorBorn = row["born"]!
+                let warriorDeath = row["death"]!
+                let warriorKingdom = row["kingdom"]!
+                let warriorBio = row["bio"]!
+                */
+                
+                warriors.append(Warrior(name: warriorName, warriorId: warriorId))
+            }
+            
+            
             // for debugging purposes
             print( rows )
             
@@ -46,7 +62,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WarriorCell", for: indexPath) as? WarriorCell {
             
-            let warrior = Warrior(name: "Warrior", warriorId: indexPath.row)
+            let warrior = warriors[indexPath.row]
             cell.configureCell(warrior: warrior)
             
             return cell
@@ -63,7 +79,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // sets the number of items in the section
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // return 15 for now > for testing purposes
-        return 15
+        return warriors.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

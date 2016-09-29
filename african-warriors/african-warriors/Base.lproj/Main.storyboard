@@ -20,9 +20,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYO-LC-kIu">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="African Warriors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1W-Pq-vqA">
-                                        <frame key="frameInset" minX="100" minY="30" width="174" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="African Warriors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1W-Pq-vqA">
                                         <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="19"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -31,6 +29,9 @@
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="07F-R3-MUX"/>
+                                    <constraint firstAttribute="trailing" secondItem="X1W-Pq-vqA" secondAttribute="trailing" constant="8" id="bLh-CV-Aou"/>
+                                    <constraint firstItem="X1W-Pq-vqA" firstAttribute="top" secondItem="uYO-LC-kIu" secondAttribute="top" constant="30" id="dWa-nj-hOx"/>
+                                    <constraint firstItem="X1W-Pq-vqA" firstAttribute="leading" secondItem="uYO-LC-kIu" secondAttribute="leading" constant="8" id="uM2-M9-fbO"/>
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="PFP-Xo-3ge">
@@ -61,7 +62,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="dWX-bD-11e"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

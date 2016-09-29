@@ -6,6 +6,8 @@ Who is this app for: history tinkerers, children, anybody getting ready for a te
 
 > great for children preparing for the cm2 exam
 
+![Demo](demo.png)
+
 ## I Do need help (you programmer or not)
 
 I can't scour the whole web and all books. If you know of a warrior that must be included, open an issue with related links.
