@@ -16,6 +16,7 @@
 		CD2BBDFB1D9B4686002055A4 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDFA1D9B4686002055A4 /* Warrior.swift */; };
 		CD2BBDFE1D9B4BBB002055A4 /* WarriorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDFD1D9B4BBB002055A4 /* WarriorCell.swift */; };
 		CD49330A1D9C4D6D00E2F45A /* warriors.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD4933091D9C4D6D00E2F45A /* warriors.csv */; };
+		CD49330F1D9D5B1900E2F45A /* WarriorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49330E1D9D5B1900E2F45A /* WarriorDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CD2BBDFA1D9B4686002055A4 /* Warrior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
 		CD2BBDFD1D9B4BBB002055A4 /* WarriorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarriorCell.swift; sourceTree = "<group>"; };
 		CD4933091D9C4D6D00E2F45A /* warriors.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warriors.csv; sourceTree = "<group>"; };
+		CD49330E1D9D5B1900E2F45A /* WarriorDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarriorDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +64,12 @@
 		CD2BBDE31D9AFE72002055A4 /* african-warriors */ = {
 			isa = PBXGroup;
 			children = (
+				CD49330B1D9CE8C600E2F45A /* Controller */,
 				CD4933081D9C4AF600E2F45A /* Resources */,
 				CD2BBDFC1D9B4B35002055A4 /* View */,
 				CD2BBDF91D9B4649002055A4 /* Model */,
 				CD2BBDF61D9B44AC002055A4 /* util */,
 				CD2BBDE41D9AFE72002055A4 /* AppDelegate.swift */,
-				CD2BBDE61D9AFE72002055A4 /* ViewController.swift */,
 				CD2BBDE81D9AFE72002055A4 /* Main.storyboard */,
 				CD2BBDEB1D9AFE72002055A4 /* Assets.xcassets */,
 				CD2BBDED1D9AFE72002055A4 /* LaunchScreen.storyboard */,
@@ -106,6 +108,15 @@
 				CD4933091D9C4D6D00E2F45A /* warriors.csv */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		CD49330B1D9CE8C600E2F45A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD2BBDE61D9AFE72002055A4 /* ViewController.swift */,
+				CD49330E1D9D5B1900E2F45A /* WarriorDetailVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD49330F1D9D5B1900E2F45A /* WarriorDetailVC.swift in Sources */,
 				CD2BBDFE1D9B4BBB002055A4 /* WarriorCell.swift in Sources */,
 				CD2BBDF81D9B44FA002055A4 /* csv.swift in Sources */,
 				CD2BBDE71D9AFE72002055A4 /* ViewController.swift in Sources */,

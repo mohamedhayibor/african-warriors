@@ -41,7 +41,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 let warriorId = Int(row["id"]!)!
                 let warriorName = row["name"]!
                 
-                /*  We'll use these pretty soon > if I extend the warrior class first
+                /*  We'll use these pretty soon > if I extend the Warrior class first
                  
                 let warriorBorn = row["born"]!
                 let warriorDeath = row["death"]!
@@ -54,7 +54,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             
             // for debugging purposes
-            print( rows )
+           //  print( rows )
             
         } catch let err as NSError {
             print(err.debugDescription)
@@ -84,7 +84,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // executes when a cell is tapped
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //
+        var warrior: Warrior!
+        
+        if inSearchMode {
+            warrior = filteredWarriors[indexPath.row]
+        } else {
+            warrior = warriors[indexPath.row]
+        }
+        
+        performSegue(withIdentifier: "WarriorDetailVC", sender: warrior)
     }
     
     // sets the number of items in the section
@@ -109,9 +117,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // at every key stroke on the searchbar the code runs
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text == nil || searchBar.text == "" {
+            
             inSearchMode = false
             collection.reloadData()
             view.endEditing(true)
+            
         } else {
             inSearchMode = true
             
@@ -124,6 +134,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         view.endEditing(true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "WarriorDetailVC" {
+            if let detailsVC = segue.destination as? WarriorDetailVC {
+                if let warrior = sender as? Warrior {
+                    detailsVC.warrior = warrior
+                }
+            }
+        }
     }
 }
 

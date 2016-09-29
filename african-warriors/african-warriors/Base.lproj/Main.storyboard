@@ -107,11 +107,42 @@
                     <connections>
                         <outlet property="collection" destination="aGf-f4-bWq" id="7F3-p7-zFD"/>
                         <outlet property="searchBar" destination="PFP-Xo-3ge" id="znI-uV-MIW"/>
+                        <segue destination="iqJ-iW-PVw" kind="show" identifier="WarriorDetailVC" id="evK-av-et9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Warrior DetailVC-->
+        <scene sceneID="SfD-d3-9ZH">
+            <objects>
+                <viewController id="iqJ-iW-PVw" customClass="WarriorDetailVC" customModule="african_warriors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oUL-RC-esQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="clp-C8-TCk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fl7-GJ-CD1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJA-Vq-fdR">
+                                <frame key="frameInset" minX="97" minY="243" width="186" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameLbl" destination="ZJA-Vq-fdR" id="Cr1-ic-Zri"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLN-t9-J2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
