@@ -15,15 +15,14 @@ I can't scour the whole web and all books. If you know of a warrior that must be
 Even better send me a csv file with the following structure:
 
 ```csv
-id, name, born, death, kingdom, bio
-1, Lat Dior, 1842, 1886, Cayor, "to fill later"
-2, Samory Toure, 1830, 1900, Wassoulou Empire, "...."
-3, Mamadou Lamine Drame, 1840, 1887, "...", "..."
-4, Alboury Ndiaye, "..", "..", "..", ".."
-5, Samba Laobe Fall,"..", "..", "..", ".."
-6, Oumar Tall,"..", "..", "..", ".."
-7, Aline Sitoe diatta, "..", "..", "..", ".."
-8, Shaka Zulu, 1787, 1828, Zulu Kingdom, "...."
+id,name,born,death,kingdom,bio
+1,Lat Dior,1842,1886,Cayor,"to fill later - abrr .."
+2,Samory Toure,1830,1900,Wassoulou Empire,"...."
+3,Mamadou Lamine Drame,1840,1887,"...","..."
+4,Alboury Ndiaye,"..","..","..",".."
+5,Oumar Tall,"..","..","..",".."
+6,Aline Sitoe diatta,"..","..","..",".."
+7,Shaka Zulu,1787,1828,Zulu Kingdom,"...."
 ```
 
 and a folder containing the profile of the warrior. Name the image by the corresponding id.

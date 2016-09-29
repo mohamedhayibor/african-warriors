@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
     @IBOutlet weak var collection: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var warriors = [Warrior]()
+    var filteredWarriors = [Warrior]()
+    var inSearchMode = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +25,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // assigning the delegate and datasource to self
         collection.dataSource = self
         collection.delegate = self
-        
+        searchBar.delegate = self
+        searchBar.returnKeyType = UIReturnKeyType.done
         parseWarriorsCSV()
     }
     
@@ -62,8 +66,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WarriorCell", for: indexPath) as? WarriorCell {
             
-            let warrior = warriors[indexPath.row]
-            cell.configureCell(warrior: warrior)
+            let warrior: Warrior!
+            
+            if inSearchMode {
+                warrior = filteredWarriors[indexPath.row]
+                cell.configureCell(warrior: warrior)
+            } else {
+                warrior = warriors[indexPath.row]
+                cell.configureCell(warrior: warrior)
+            }
             
             return cell
         } else {
@@ -78,7 +89,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // sets the number of items in the section
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // return 15 for now > for testing purposes
+        
+        if inSearchMode {
+            return filteredWarriors.count
+        }
+        
         return warriors.count
     }
     
@@ -89,6 +104,26 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // defining the size of the cells
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 105, height: 105)
+    }
+    
+    // at every key stroke on the searchbar the code runs
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == nil || searchBar.text == "" {
+            inSearchMode = false
+            collection.reloadData()
+            view.endEditing(true)
+        } else {
+            inSearchMode = true
+            
+            let query = searchBar.text!.lowercased()
+            
+            filteredWarriors = warriors.filter({ $0.name.range(of: query) != nil })
+            collection.reloadData()
+        }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
     }
 }
 
