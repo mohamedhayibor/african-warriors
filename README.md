@@ -6,7 +6,7 @@ Who is this app for: history tinkerers, children, anybody getting ready for a te
 
 > great for children preparing for the cm2 exam
 
-![Demo](https://raw.githubusercontent.com/mohamedhayibor/african-warriors/master/README.md)
+![Demo](https://github.com/mohamedhayibor/african-warriors/blob/master/Demo.png)
 
 ## I Do need help (you programmer or not)
 
