@@ -126,18 +126,123 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJA-Vq-fdR">
-                                <frame key="frameInset" minX="97" minY="243" width="186" height="101"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tiJ-Mv-u3V">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJA-Vq-fdR">
+                                        <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="19"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="3SD-6J-mzD"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZJA-Vq-fdR" secondAttribute="trailing" constant="8" id="81M-rN-ltF"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZJA-Vq-fdR" secondAttribute="bottom" constant="8" id="nVj-E9-RHv"/>
+                                    <constraint firstItem="ZJA-Vq-fdR" firstAttribute="leading" secondItem="tiJ-Mv-u3V" secondAttribute="leading" constant="8" id="prY-pd-UcX"/>
+                                    <constraint firstItem="ZJA-Vq-fdR" firstAttribute="top" secondItem="tiJ-Mv-u3V" secondAttribute="top" constant="26" id="w52-8J-lzR"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion-savana-min" translatesAutoresizingMaskIntoConstraints="NO" id="1iq-57-pip"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iHy-hZ-a0l">
+                                <frame key="frameInset" minX="16" minY="73" width="343" height="29"/>
+                                <segments>
+                                    <segment title="English"/>
+                                    <segment title="Français"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeLang:" destination="iqJ-iW-PVw" eventType="valueChanged" id="02F-oY-LGd"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ML-v1-o1W">
+                                <frame key="frameInset" minX="16" minY="109" width="343" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxi-rm-Jf1">
+                                <frame key="frameInset" minX="16" minY="318" width="343" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="born:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tb-mc-zqR">
+                                        <frame key="frameInset" minX="17" minY="8" width="57" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="death:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsi-Mv-d7t">
+                                        <frame key="frameInset" minX="166" minY="8" width="60" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1990" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCh-Hv-Kmt">
+                                        <frame key="frameInset" minX="234" minY="8" width="60" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93M-7f-oao">
+                                        <frame key="frameInset" minX="67" minY="8" width="60" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kingdom:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZL-sz-qmn">
+                                        <frame key="frameInset" minX="24" minY="73" width="75" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moussolou Empire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osA-eN-rJg">
+                                        <frame key="frameInset" minX="134" minY="73" width="201" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4he-UZ-eDa">
+                                        <frame key="frameInset" minX="134" minY="117" width="79" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-Ob-UOe">
+                                        <frame key="frameInset" minX="24" minY="154" width="311" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1iq-57-pip" firstAttribute="leading" secondItem="Fl7-GJ-CD1" secondAttribute="leading" id="3Pc-fK-TYi"/>
+                            <constraint firstItem="iHy-hZ-a0l" firstAttribute="leading" secondItem="Fl7-GJ-CD1" secondAttribute="leading" id="IHP-KQ-Ule"/>
+                            <constraint firstItem="clp-C8-TCk" firstAttribute="top" secondItem="1iq-57-pip" secondAttribute="bottom" id="JzW-yS-ZPr"/>
+                            <constraint firstAttribute="trailing" secondItem="tiJ-Mv-u3V" secondAttribute="trailing" id="Lsq-4t-CtG"/>
+                            <constraint firstItem="tiJ-Mv-u3V" firstAttribute="top" secondItem="Fl7-GJ-CD1" secondAttribute="top" id="RWG-8q-zNr"/>
+                            <constraint firstItem="tiJ-Mv-u3V" firstAttribute="leading" secondItem="Fl7-GJ-CD1" secondAttribute="leading" id="T4k-wC-G78"/>
+                            <constraint firstItem="1iq-57-pip" firstAttribute="top" secondItem="tiJ-Mv-u3V" secondAttribute="bottom" id="UR8-WO-qAY"/>
+                            <constraint firstAttribute="trailing" secondItem="iHy-hZ-a0l" secondAttribute="trailing" id="lyJ-LT-e9R"/>
+                            <constraint firstAttribute="trailing" secondItem="1iq-57-pip" secondAttribute="trailing" id="yBF-kT-1gm"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameLbl" destination="ZJA-Vq-fdR" id="Cr1-ic-Zri"/>
+                        <outlet property="isEnglish" destination="iHy-hZ-a0l" id="I57-Ij-X9Q"/>
+                        <outlet property="nameLbl" destination="ZJA-Vq-fdR" id="blc-QG-54U"/>
+                        <outlet property="warriorBio" destination="KFH-Ob-UOe" id="KA2-q9-L3i"/>
+                        <outlet property="warriorBorn" destination="93M-7f-oao" id="4pI-Hf-dtA"/>
+                        <outlet property="warriorDeath" destination="DCh-Hv-Kmt" id="NHY-bE-szD"/>
+                        <outlet property="warriorImage" destination="5ML-v1-o1W" id="d14-mq-j1p"/>
+                        <outlet property="warriorKingdom" destination="osA-eN-rJg" id="LdM-A1-t0f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLN-t9-J2k" userLabel="First Responder" sceneMemberID="firstResponder"/>

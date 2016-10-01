@@ -17,6 +17,7 @@
 		CD2BBDFE1D9B4BBB002055A4 /* WarriorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BBDFD1D9B4BBB002055A4 /* WarriorCell.swift */; };
 		CD49330A1D9C4D6D00E2F45A /* warriors.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD4933091D9C4D6D00E2F45A /* warriors.csv */; };
 		CD49330F1D9D5B1900E2F45A /* WarriorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49330E1D9D5B1900E2F45A /* WarriorDetailVC.swift */; };
+		CD4933111D9DB2CC00E2F45A /* warriorsFrench.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD4933101D9DB2CC00E2F45A /* warriorsFrench.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CD2BBDFD1D9B4BBB002055A4 /* WarriorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarriorCell.swift; sourceTree = "<group>"; };
 		CD4933091D9C4D6D00E2F45A /* warriors.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warriors.csv; sourceTree = "<group>"; };
 		CD49330E1D9D5B1900E2F45A /* WarriorDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarriorDetailVC.swift; sourceTree = "<group>"; };
+		CD4933101D9DB2CC00E2F45A /* warriorsFrench.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warriorsFrench.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CD4933091D9C4D6D00E2F45A /* warriors.csv */,
+				CD4933101D9DB2CC00E2F45A /* warriorsFrench.csv */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD2BBDEF1D9AFE72002055A4 /* LaunchScreen.storyboard in Resources */,
+				CD4933111D9DB2CC00E2F45A /* warriorsFrench.csv in Resources */,
 				CD2BBDEC1D9AFE72002055A4 /* Assets.xcassets in Resources */,
 				CD2BBDEA1D9AFE72002055A4 /* Main.storyboard in Resources */,
 				CD49330A1D9C4D6D00E2F45A /* warriors.csv in Resources */,

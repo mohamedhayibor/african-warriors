@@ -41,12 +41,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 let warriorId = Int(row["id"]!)!
                 let warriorName = row["name"]!
                 
-                /*  We'll use these pretty soon > if I extend the Warrior class first
-                 
-                let warriorBorn = row["born"]!
-                let warriorDeath = row["death"]!
-                let warriorKingdom = row["kingdom"]!
-                let warriorBio = row["bio"]!
+                /* 
+                 * Change of plans the main thing we need to transfer to WarriorDetailVC is
+                 * the warriorId then we'll fetch the data based on french or default english
+                 * database (the 2 csv ;)
                 */
                 
                 warriors.append(Warrior(name: warriorName, warriorId: warriorId))
@@ -54,7 +52,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             
             // for debugging purposes
-           //  print( rows )
+            //  print( rows )
             
         } catch let err as NSError {
             print(err.debugDescription)
@@ -92,7 +90,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             warrior = warriors[indexPath.row]
         }
         
-        performSegue(withIdentifier: "WarriorDetailVC", sender: warrior)
+        // explecitely sending the warrior to WarriorDetailVC but it somehow not working
+        // Most likely, I don't understand how performSegue works in conjunction with the prepare function on line 141
+    
+        performSegue(withIdentifier: "WarriorDetailVC", sender: warrior.warriorId)
+        
     }
     
     // sets the number of items in the section
@@ -138,9 +140,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "WarriorDetailVC" {
-            if let detailsVC = segue.destination as? WarriorDetailVC {
-                if let warrior = sender as? Warrior {
-                    detailsVC.warrior = warrior
+            if let detailVC = segue.destination as? WarriorDetailVC {
+                if let warriorId = sender as? Int {
+                    // **** This thing is bugging hard
+                    // > I probably don't understand how segues work on IOS yet.
+                    // > The only thing I need to send is the warriorId (warrior row from csv)
+                    
+                    detailVC = warriorId
                 }
             }
         }
