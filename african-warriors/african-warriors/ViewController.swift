@@ -146,7 +146,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                     // > I probably don't understand how segues work on IOS yet.
                     // > The only thing I need to send is the warriorId (warrior row from csv)
                     
-                    detailVC = warriorId
+                    detailVC.warriorId = warriorId
                 }
             }
         }

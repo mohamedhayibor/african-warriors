@@ -144,7 +144,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion-savana-min" translatesAutoresizingMaskIntoConstraints="NO" id="1iq-57-pip"/>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iHy-hZ-a0l">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iHy-hZ-a0l">
                                 <frame key="frameInset" minX="16" minY="73" width="343" height="29"/>
                                 <segments>
                                     <segment title="English"/>
@@ -154,9 +154,8 @@
                                     <action selector="changeLang:" destination="iqJ-iW-PVw" eventType="valueChanged" id="02F-oY-LGd"/>
                                 </connections>
                             </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ML-v1-o1W">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ML-v1-o1W">
                                 <frame key="frameInset" minX="16" minY="109" width="343" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxi-rm-Jf1">
                                 <frame key="frameInset" minX="16" minY="318" width="343" height="329"/>
@@ -228,10 +227,12 @@
                             <constraint firstItem="iHy-hZ-a0l" firstAttribute="leading" secondItem="Fl7-GJ-CD1" secondAttribute="leading" id="IHP-KQ-Ule"/>
                             <constraint firstItem="clp-C8-TCk" firstAttribute="top" secondItem="1iq-57-pip" secondAttribute="bottom" id="JzW-yS-ZPr"/>
                             <constraint firstAttribute="trailing" secondItem="tiJ-Mv-u3V" secondAttribute="trailing" id="Lsq-4t-CtG"/>
+                            <constraint firstItem="iHy-hZ-a0l" firstAttribute="top" secondItem="tiJ-Mv-u3V" secondAttribute="bottom" constant="8" id="Oji-er-0Gp"/>
                             <constraint firstItem="tiJ-Mv-u3V" firstAttribute="top" secondItem="Fl7-GJ-CD1" secondAttribute="top" id="RWG-8q-zNr"/>
                             <constraint firstItem="tiJ-Mv-u3V" firstAttribute="leading" secondItem="Fl7-GJ-CD1" secondAttribute="leading" id="T4k-wC-G78"/>
                             <constraint firstItem="1iq-57-pip" firstAttribute="top" secondItem="tiJ-Mv-u3V" secondAttribute="bottom" id="UR8-WO-qAY"/>
                             <constraint firstAttribute="trailing" secondItem="iHy-hZ-a0l" secondAttribute="trailing" id="lyJ-LT-e9R"/>
+                            <constraint firstItem="5ML-v1-o1W" firstAttribute="top" secondItem="iHy-hZ-a0l" secondAttribute="bottom" constant="8" id="qUz-ji-njc"/>
                             <constraint firstAttribute="trailing" secondItem="1iq-57-pip" secondAttribute="trailing" id="yBF-kT-1gm"/>
                         </constraints>
                     </view>
